@@ -1,0 +1,8 @@
+#base image
+FROM python:3
+COPY . /haneen
+WORKDIR  /haneen
+RUN pip install nltk
+RUN pip install stopwords
+RUN pip install numpy
+CMD python pyfile.py
